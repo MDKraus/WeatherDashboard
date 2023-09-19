@@ -1,0 +1,238 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #262646; /* Light Gray */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 32px;
+    color: #007bff; /* Bright Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Container Styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Bright Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Slightly Darker Blue */
+}
+
+/* Current Weather Styles */
+.current-weather {
+    background-color: #c5cbdce6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.current-weather #city-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.current-weather #date {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #777;
+}
+
+.current-weather #weather-icon {
+    margin-top: 20px;
+}
+
+.current-weather #temperature {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.current-weather #humidity,
+.current-weather #wind-speed {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Forecast Styles */
+.forecast {
+    background-color: #ffffffe6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.forecast h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(80, 113, 170, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: auto;
+    max-width: calc(20% - 20px);
+    display: inline-block;
+}
+/* Separate styling for the date */
+.forecast-item .date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Separate styling for temperature, humidity, and wind speed */
+.forecast-item .weather-info {
+    padding: 10px;
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.forecast-item .weather-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #7f6767;
+    line-height: 1.5;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.forecast-item p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.5;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Search History Styles */
+.search-history {
+    background-color: rgba(174, 173, 209, 0.9);    padding: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-history h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+/* Style for the city buttons */
+.city-button {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 10px 20px; /* Add padding to the buttons */
+    border: 2px solid #007bff; /* Add a border */
+    background-color: #007bff; /* Change the background color */
+    color: #fff; /* Change the text color to white */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    display: block; /* Make them inline-block elements */
+    text-align: center; /* Center the text horizontally */
+    width: auto; /* Allow the button width to adjust based on content */
+}
+
+.city-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+li {
+    font-size: 20px;
+    margin: 5px; /* Add a little margin around each item */
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    display: block; /* Make li elements inline-block to control their widths */
+    width: auto;
+}
+
+
+li:hover {
+    color: #007bff; /* Bright Blue */
+}
