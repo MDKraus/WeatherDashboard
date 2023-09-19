@@ -43,10 +43,7 @@ function displayWeather(data) {
         // Display temperature in Fahrenheit
         const temperatureValueFahrenheit = kelvinToFahrenheit(temperatureValueKelvin);
         temperature.textContent = `Temperature: ${temperatureValueFahrenheit.toFixed(2)} °F`; // Rounded to 2 decimal places
-
-        // Similarly, extract and display other weather information
-        // Example: date.textContent = data.list[0].dt_txt;
-
+        
         // You can also display the weather icon (assuming the API provides an icon code)
         const iconCode = data.list[0].weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
@@ -145,7 +142,6 @@ function displaySearchHistory() {
     });
 }
 
-// Function to initialize the search history in local storage if it
 // Function to initialize the search history in local storage if it doesn't exist
 function initializeSearchHistory() {
     if (!localStorage.getItem('searchHistory')) {
@@ -156,6 +152,7 @@ function initializeSearchHistory() {
 // Call the initialization function when your JavaScript file loads
 initializeSearchHistory();
 displaySearchHistory(); // Display the search history initially
+
 // Event listener for the history list items
 historyList.addEventListener('click', (event) => {
     if (event.target.tagName === 'LI') {
@@ -193,3 +190,4 @@ searchButton.addEventListener('click', async () => {
         }
     }
 });
+

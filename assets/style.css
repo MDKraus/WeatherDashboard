@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #262646; /* Light Gray */
+    background-color: #262646; /* Dark Gray */
     color: #333;
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ button:hover {
 
 /* Current Weather Styles */
 .current-weather {
-    background-color: #c5cbdce6;
+    background-color: #c5cbdce6; /* Light Gray with Transparency */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@ button:hover {
 
 .current-weather h2 {
     font-size: 28px;
-    color: #007bff;
+    color: #007bff; /* Bright Blue */
     margin-bottom: 10px;
 }
 
@@ -106,7 +106,7 @@ button:hover {
 
 /* Forecast Styles */
 .forecast {
-    background-color: #ffffffe6;
+    background-color: #ffffffe6; /* White with Transparency */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -116,7 +116,7 @@ button:hover {
 
 .forecast h2 {
     font-size: 28px;
-    color: #007bff;
+    color: #007bff; /* Bright Blue */
     margin-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@ button:hover {
 .forecast-item {
     margin: 10px;
     padding: 10px;
-    background-color: rgba(80, 113, 170, 0.9);
+    background-color: rgba(80, 113, 170, 0.9); /* Blue with Transparency */
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -138,6 +138,7 @@ button:hover {
     max-width: calc(20% - 20px);
     display: inline-block;
 }
+
 /* Separate styling for the date */
 .forecast-item .date {
     font-size: 20px;
@@ -158,7 +159,7 @@ button:hover {
 .forecast-item .weather-info p {
     font-size: 18px;
     margin: 10px 0;
-    color: #7f6767;
+    color: #7f6767; /* Light Gray */
     line-height: 1.5;
     padding: 5px;
     border: 1px solid #ccc;
@@ -175,7 +176,7 @@ button:hover {
 
 /* Search History Styles */
 .search-history {
-    background-color: rgba(174, 173, 209, 0.9);    padding: 20px;
+    background-color: rgba(174, 173, 209, 0.9); /* Grayish with Transparency */
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -198,6 +199,7 @@ ul {
     padding: 0;
     justify-content: center;
 }
+
 /* Style for the city buttons */
 .city-button {
     font-size: 20px;
@@ -216,9 +218,10 @@ ul {
 }
 
 .city-button:hover {
-    background-color: #0056b3;
-    color: #fff;
+    background-color: #0056b3; /* Darker Blue on Hover */
+    color: #fff; /* Text color to white on Hover */
 }
+
 li {
     font-size: 20px;
     margin: 5px; /* Add a little margin around each item */
@@ -232,7 +235,3 @@ li {
     width: auto;
 }
 
-
-li:hover {
-    color: #007bff; /* Bright Blue */
-}
