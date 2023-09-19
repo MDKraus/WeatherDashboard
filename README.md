@@ -4,6 +4,8 @@ The Weather Dashboard is a web application that allows users to search for the c
 
 Weather Dashboard Screenshot:
 
+![Alt text](./assets/images/Screenshot%20(6).png)
+
 Features
 Current Weather: Displays the current weather conditions for the searched city, including temperature, humidity, wind speed, and an icon representing the weather condition.
 
